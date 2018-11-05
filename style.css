@@ -1,0 +1,219 @@
+/*
+https://github.com/michael-yelnikov/jenkins-dark-hell
+*/
+.console-output,
+.console-output * {
+    position: relative;
+    font-family: 'Courier New', Courier, monospace !important;
+    background: #0000009c;
+    padding-left: 5px;
+    color: #fff;
+    border-radius: 1px;
+    cursor: text;
+}
+
+html {
+-webkit-filter: invert(100%) !important;
+  background-color: #222222;
+}
+
+img,
+iframe {
+  -webkit-filter: invert(100%) !important;
+}
+
+#header,
+#breadcrumbBar {
+  background: #fff !important;
+}
+
+#main-panel {
+  background: #ddd !important;
+}
+
+
+#page-body,
+#side-panel {
+  background: #ddd !important;
+}
+
+a,
+a:visited,
+.model-link,
+a:link {
+  text-decoration: none !important;
+  color: #957373 !important;
+}
+
+a:hover,
+.model-link:hover {
+  border-bottom: 1px solid #ccc !important;
+}
+
+#header .login a,
+#header .login a:visited {
+  color: #222 !important;
+}
+.inverse {
+  color: #000 !important;
+}
+
+ 
+.build-row-cell {
+  height: 35px !important;
+}
+
+.build-status-link img {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.build-row-cell .pane.build-name .display-name {
+  margin-left: 30px !important;
+}
+
+.progress-bar-done {
+  background-color: rgb(251, 141, 43) !important;
+}
+
+.progress-bar-left {
+  border: 1px solid #4c5026 !important;
+  margin: 2px !important;
+}
+
+.icon-red-anime .icon-lgp {
+  content: url('Ripple.gif') !important;
+}
+
+
+/* Filed build */
+
+.build-status-link img[title="Failed > Console Output"],
+tr td [tooltip="Failed"],
+img[alt="Failed > Console Output"] {
+  content: url('fail.png') !important;
+}
+
+
+/* Successfully build icon */
+
+.build-status-link img[title="Success > Console Output"],
+tr td [title="Success"],
+img[tooltip="Success"],
+img[alt="Success"],
+img[alt="Success > Console Output"] {
+  content: url('ok.png') !important;
+margin-right: 5px;
+}
+
+
+/* Red icon at job details page */
+
+.build-status-link img[title="In progress"] {
+  margin-top: 2px !important;
+  content: url('red.gif') !important;
+  height: 22px !important;
+  width: 22px !important;
+}
+
+
+/* Gray gif at job details page */
+
+.build-status-link img[title="In progress > Console Output"],
+img[alt="In progress > Console Output"],
+#spinner img {
+  margin-top: 2px !important;
+  content: url('gray.gif') !important;
+  height: 22px !important;
+  width: 22px !important;
+}
+
+
+/* Fire icon at build in progress */
+
+img[tooltip="In progress"],
+img[class="icon-grey-anime icon-md"]{
+  content: url('index.lava-lamp-preloader.svg') !important;
+  height: 30px !important;
+  width: 30px !important;
+}
+
+img[src='/static/0863560f/images/24x24/clock_anime.gif'] {
+  content: url('clock.svg') !important;
+  height: 30px !important;
+  width: 30px !important;
+}
+
+/*  Rss Feed Icon */
+
+img[alt="Feed"]{ 
+content: url('rss.png') !important;
+margin: 5px;
+}
+
+/* Red border disable */
+
+a:hover {
+  border-bottom: none !important;
+}
+.model-link:hover {
+  border-bottom: none !important;
+}
+
+/* Search icon */
+
+#search-box {
+    background: white url(search.png) no-repeat;
+}
+ 
+/* Google font */
+
+@font-face {
+  font-family: 'Nosifer';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nosifer'), local('Nosifer-Regular'), url(https://fonts.gstatic.com/s/nosifer/v6/Z6gjQUmRSbxVfbGjgukSZlKPGs1ZzpMvnHX-7fPOuAc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+
+@font-face {
+  font-family: 'Nosifer';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nosifer'), local('Nosifer-Regular'), url(https://fonts.gstatic.com/s/nosifer/v6/2bQMQtUjs86JeRwhml4LPwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+/* Welcome to hell */
+
+div[id='description']{
+margin-top: 5px;
+    background:  url(hell.png) no-repeat;
+background-position-x: 530px;
+color: #b92626;
+   -webkit-filter: invert(100%) !important;
+    height: 60px;
+	font-size: 40px;
+font-family: 'Nosifer', cursive !important;);
+}
+
+a[id="description-link"]{
+-webkit-filter: invert(100%) !important;
+font-size: 0.001px;
+color: rgba(0,0,0,0);
+font-family: none !important;
+}
+
+/* Jenkins home */
+
+img[id="jenkins-name-icon"]{
+  content:  url(jenkins.png) !important;
+   margin-left: 5px;
+}
+
+h1[class="job-index-headline page-headline"]{
+    display: none;
+}
