@@ -91,7 +91,7 @@ img[tooltip="Успешно"],
 tr td [title="Success"],
 tr td [title="Успешно"],
 img[alt="Success > Console Output"],
-img[alt="Success > Успешно > Вывод консоли"],
+img[alt="Успешно > Вывод консоли"],
 img[title = "Success > Console Output" ],
 img[title = "Success > Успешно > Вывод консоли" ] {
   content: url(ok.png) !important;
