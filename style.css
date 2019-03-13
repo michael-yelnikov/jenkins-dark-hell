@@ -4,7 +4,9 @@ https://github.com/michael-yelnikov/jenkins-dark-hell
 @import url('https://fonts.googleapis.com/css?family=Nosifer');
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
 :root {
-  --redBG: #c1f5f3;}
+  --redBG: #c1f5f3;
+  --redText: #6cd2d4;
+  }
 .console-output,
 .console-output * {
   position: relative;
@@ -229,4 +231,7 @@ h1[class="job-index-headline page-headline"] {
   }
 #visible-am-container.visible #visible-am-button {
   box-shadow: none !important;
+  }
+#plugins .compatWarning{
+  color: var(--redText);
   }
