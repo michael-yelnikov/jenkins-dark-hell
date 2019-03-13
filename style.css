@@ -232,6 +232,9 @@ h1[class="job-index-headline page-headline"] {
 #visible-am-container.visible #visible-am-button {
   box-shadow: none !important;
   }
-#plugins .compatWarning{
-  color: var(--redText);
-  }
+.compatWarning{
+  color: var(--redText) !important;
+}
+.securityWarning{
+  color: var(--redText) !important;
+}
