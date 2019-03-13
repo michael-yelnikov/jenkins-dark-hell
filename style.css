@@ -3,6 +3,8 @@ https://github.com/michael-yelnikov/jenkins-dark-hell
 */
 @import url('https://fonts.googleapis.com/css?family=Nosifer');
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
+:root {
+  --redBG: #c1f5f3;}
 .console-output,
 .console-output * {
   position: relative;
@@ -195,6 +197,7 @@ h1[class="job-index-headline page-headline"] {
   display: inline-block;
   outline: 0;
   padding: 0 2rem;
+  margin: 10px;
   text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent;
@@ -207,4 +210,23 @@ h1[class="job-index-headline page-headline"] {
   bottom: 4px !important;
   left: 15px !important;
   border-left: 1px solid #957373 !important;
+  }
+/* Error blocks */
+.gradle-outcome-failure {
+  color: #0bbdb0;
+  }
+.alert-danger{
+  background-color: var(--redBG);
+  border-color: #7be2ff;
+  color: #426aa9;
+  }
+.alert-info {
+  background-color: #c5c5c5;
+  border-color: #a2a6a7;
+  }
+#visible-am-button {
+  background-color: var(--redBG) !important;
+  }
+#visible-am-container.visible #visible-am-button {
+  box-shadow: none !important;
   }
