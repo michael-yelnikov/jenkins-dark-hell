@@ -19,7 +19,7 @@ https://github.com/michael-yelnikov/jenkins-dark-hell
   }
 html {
   -webkit-filter: invert(100%) !important;
-  background-color: #222;
+  background: #ddd !important;
   }
 img,
 iframe {
@@ -135,7 +135,7 @@ img[src='/static/0863560f/images/24x24/clock_anime.gif'] {
   width: 30px !important;
   }
 /*  Rss Feed Icon */
-img[alt="Feed"] {
+img[alt="Feed"], img[alt="Atom feed"] {
   content: url(rss.png) !important;
   margin: 5px;
   }
